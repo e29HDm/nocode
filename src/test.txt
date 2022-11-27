@@ -1,0 +1,20 @@
+1. cat
+2. car
+3. dog
+4. cart
+5. aa
+6. caca
+
+
+sort list alphabetically while keeping order numbering
+------------
+
+write a grocery list to prepare a wonderful thanksgiving
+
+------------
+
+0:(1), 150:(0), 200:(-1), 350:(0), 600:(1), 650:(2), 700:(3), 750:(4), 800:(3), 850:(2), 900:(1), 950:(0)
+
+keep only the first number before each ":("
+separate those numbers with a newline character
+then make a numbered list with it
