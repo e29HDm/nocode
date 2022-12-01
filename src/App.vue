@@ -14,6 +14,11 @@ const execute = async () => {
   output.value = (await Gpt.completion(prompt.value, input.value)) ?? "error";
   isLoading.value = false;
 };
+
+const useOutputAsInput = () => {
+  input.value = output.value;
+  output.value = "";
+};
 </script>
 
 <template>
@@ -82,7 +87,15 @@ const execute = async () => {
           />
         </div>
 
-        <div class="flex justify-end">
+        <div class="flex justify-end items-center space-x-4">
+          <!-- button use output as input -->
+          <button
+            @click="useOutputAsInput"
+            class="bg-indigo-500 hover:bg-indigo-600 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 text-white font-medium px-3 py-1 rounded-md text-sm shadow transition-all"
+          >
+            Use Output as Input
+          </button>
+
           <button
             @click="execute"
             class="bg-indigo-500 hover:bg-indigo-600 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 text-white font-medium px-3 py-1 rounded-md text-sm shadow transition-all"

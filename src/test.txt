@@ -18,3 +18,9 @@ write a grocery list to prepare a wonderful thanksgiving
 keep only the first number before each ":("
 separate those numbers with a newline character
 then make a numbered list with it
+
+
+hello world
+how are you today?
+blablablablablablablablabla
+for each line, count the number of words and characters
